@@ -1,0 +1,26 @@
+# Robots.txt para DOHMI - Sitio de bienes raíces
+# Permite el acceso a todas las páginas públicas para mejorar el SEO
+
+User-agent: *
+Allow: /
+
+# Bloquear acceso a rutas de perfil privadas y archivos del sistema
+Disallow: /profile/
+Disallow: /edit-property/
+Disallow: /_redirects
+Disallow: /*.json
+Disallow: /src/
+Disallow: /node_modules/
+
+# Ubicación del sitemap
+Sitemap: https://www.dohmi.net/sitemap.xml
+
+# Directrices específicas para bots de redes sociales
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
